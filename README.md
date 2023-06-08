@@ -5,7 +5,7 @@ Based in Tuscon, Arizona, Lucky Shrub is a medium-sized garden design firm that 
 
 Lucky Shrub was started by a husband and wife team, Jason and Maria, who share a long-time love for plants. Jason is the garden architect. He creates and oversees all designs while managing his team of landscapers. Maria manages all the marketing for the company and oversees the nursery.
 
-**Demo: [Lucky Shrub Homepage](https://git4amar.github.io/lucky_shrub_garden_designers/)**
+**Demo: <a href="https://git4amar.github.io/lucky_shrub_garden_designers/" target="_blank">Lucky Shrub Homepage</a>**
 
 *Created By: Amarpreet S. Bir [(Connect on Linkedin)](https://www.linkedin.com/in/amarpreetbir)*
 
