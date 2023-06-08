@@ -232,6 +232,10 @@ footer p {
         align-self: center;
     }
 
+    #banner a {
+        display: flex;
+    }
+
     header {
         background-size: cover;
         animation: header-bg-anim 15s linear infinite;
