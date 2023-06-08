@@ -10,15 +10,11 @@ body {
 header {
     width: 100vw;
     height: 20vh;
-    /*background: url(/assets/header-bg.png) 75% top/cover no-repeat;*/
-    background-image: url('/assets/header-bg.png');
-    background-size: 105%;
-    background-repeat: no-repeat;
+    background: url(/assets/header-bg.png) 75% top/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    animation: header-bg-anim 15s linear infinite;
 }
 
 @keyframes header-bg-anim {
@@ -234,6 +230,11 @@ footer p {
         font-size: xx-large;
         text-align: left;
         align-self: center;
+    }
+
+    header {
+        background-size: cover;
+        animation: header-bg-anim 15s linear infinite;
     }
     
     nav a {font-size: xx-large;}
