@@ -10,7 +10,7 @@ body {
 header {
     width: 100vw;
     height: 20vh;
-    background: url(/assets/header-bg.png) 75% top/cover no-repeat;
+    background: url("../assets/header-bg.png") 75% top/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +88,7 @@ nav a:hover {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 
-    background-image: url('/assets/menu-text-bg.png');
+    background-image: url('../assets/menu-text-bg.png');
     background-size: 120%;
 
     text-shadow: 2px 4px 4px #7E685A;
@@ -181,7 +181,7 @@ footer > div {
     height: 100%;
     display: flex;
     align-items: center;
-    background-image: url('/assets/menu-text-bg.png');
+    background-image: url('../assets/menu-text-bg.png');
     background-size: contain;
     padding: 1vh 2vw;
     justify-content: space-between;
