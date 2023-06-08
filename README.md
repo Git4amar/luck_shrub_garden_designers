@@ -7,7 +7,11 @@ Lucky Shrub was started by a husband and wife team, Jason and Maria, who share a
 
 <script src='https://cdn.jsdelivr.net/gh/eddymens/markdown-external-link-script@v1.0.0/main.min.js'></script>
 
+<<<<<<< HEAD
 **Demo: [Lucky Shrub Homepage {_ext}](https://git4amar.github.io/lucky_shrub_garden_designers/)**
+=======
+**Demo: [Lucky Shrub Homepage  {_ext}](https://git4amar.github.io/lucky_shrub_garden_designers/)**
+>>>>>>> dc40a7eeed086c82e75a91135b80fdbc101b6428
 
 *Created By: Amarpreet S. Bir [(Connect on Linkedin) {_ext}](https://www.linkedin.com/in/amarpreetbir)*
 
