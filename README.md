@@ -10,7 +10,7 @@ Lucky Shrub was started by a husband and wife team, Jason and Maria, who share a
 *Created By: Amarpreet S. Bir <a href="https://www.linkedin.com/in/amarpreetbir" target="_blank">(Connect on Linkedin)</a>*
 
 ### Figma Draft Design
-![Lucky Shrub Figma Draft](lucky_shrub_figma_draft.png)
+![Lucky Shrub Figma Draft](./lucky_shrub_figma_draft.png)
 
 ### Final Homepage
-![Lucky Shrub Homepage](lucky_shrub_homepage_screenshot.png)
+![Lucky Shrub Homepage](./lucky_shrub_homepage_screenshot.png)
