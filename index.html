@@ -28,13 +28,15 @@
     <!--Include CSS files here (at last postion in the head)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme">
 </head>
 
-<body>
+<body onload="redirectUser()">
     <header>
         <p>Transform any Space into an Oasis</p>
-        <a href="#" style="height: 100%; display: flex; align-items: center; text-decoration: none;">
+        <a href="index.html" style="height: 100%; display: flex; align-items: center; text-decoration: none;">
             <div id="header-logo">
                 <img src="Lucky-Shrub-logos/logo-2.png" alt="Lucky Shrub Logo">
             </div>
@@ -43,7 +45,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Gardens</a></li>
             <li><a href="#">Nursery</a></li>
             <li><a href="#">About</a></li>
@@ -55,7 +57,7 @@
             <article>
                 <a href="#" style="text-decoration: none;">
                     <img src="assets/banner-image.png" alt="promotional banner image">
-                    <h1>50% Off all Nursery plants with any Special Garden Package</h1>
+                    <h1>50% Off all Nursery plants <br><span> with any Special Garden Package</span></h1>
                 </a>
             </article>
         </section>
@@ -63,7 +65,7 @@
             <article>
                 <a href="#" style="text-decoration: none;">
                     <img src="assets/card-1-gardens-for-events.png" alt="garden designs for events">
-                    <h2>Garden designs for every occasion</h2>
+                    <h2>Garden Design for every Occasion</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Vitae turpis massa sed elementum. Semper viverra
                         nam
@@ -73,7 +75,7 @@
             <article>
                 <a href="#" style="text-decoration: none;">
                     <img src="assets/card-2-nursery-plants.png" alt="nursery plants">
-                    <h2>New exotic plants to decorate </h2>
+                    <h2>New Exotic Plants to Decorate </h2>
                     <p>Accumsan sit amet nulla facilisi morbi tempus iaculis. Vitae proin sagittis nisl
                         rhoncus mattis rhoncus urna neque. Nisl purus in mollis nunc. Lectus magna fringilla urna
                         porttitor
@@ -83,7 +85,7 @@
             <article>
                 <a href="#" style="text-decoration: none;">
                     <img src="assets/card-3-landscaping-services.png" alt="landscaping services">
-                    <h2>Landscape any space</h2>
+                    <h2>Landscape any Space</h2>
                     <p>Neque volutpat ac tincidunt vitae semper quis lectus nulla. Sit amet facilisis
                         magna etiam tempor orci eu. Nisl nunc mi ipsum faucibus vitae aliquet nec. Id volutpat lacus
                         laoreet
@@ -97,11 +99,19 @@
     <footer>
         <div>
             <img src="Lucky-Shrub-logos/logo-3.png" alt="Lucky Shrub Footer Logo">
-            <p>Copyright Lucky Shrub</p>
+            <p>&copy;Copyright Lucky Shrub</p>
         </div>
     </footer>
     <!-- Include JavaScript files here -->
     <script src="js/script.js"></script>
+    <!--
+<script>
+        function redirectUser() {
+            let text = "Would you like to open Lucky Shrub Homepage deployed on Github Pages in a new tab?";
+            confirm(text) ? window.open('https://git4amar.github.io/lucky_shrub_garden_designers/') : none;
+        }
+    </script>
+    -->
 </body>
 
 </html>

@@ -3,24 +3,18 @@
 }
 
 body {
-    background: #D3CDC6;
+    background: linear-gradient(180deg, #C0E385 0%, #DDEEC1 17.19%, #F0FFD8 72.92%, #7E685A 100%);
     font-family: 'Courier New', Courier, monospace;
 }
-
+ /* header */
 header {
     width: 100vw;
     height: 20vh;
-    background: url("../assets/header-bg.png") 75% top/cover no-repeat;
+    background: url("../assets/header-bg.png") right bottom/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-}
-
-@keyframes header-bg-anim {
-    0% {background-position: 0% 0%;}
-    50% {background-position: 100% 100%;}
-    100% {background-position: 0% 0%;}
+    gap: 2vw;
 }
 
 #header-logo {
@@ -28,36 +22,41 @@ header {
     border-radius: 10px;
     background: radial-gradient(51.87% 51.87% at 46.34% 50%, #AFD275 0%, rgba(226, 239, 206, 0.662159) 44.27%);
     padding: 1vh 2vw;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header-logo:hover {
-    border: 0;
-    box-shadow: 2px 8px 10px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     position: relative;
     top: -0.25rem;
+    box-shadow: -4px 8px 4px rgba(0, 0, 0, 0.25), 4px 8px 4px rgba(0, 0, 0, 0.25)
 }
 
-
 header img {
-    height: 100%;
+    height: 90%;
 }
 
 header > p {
-    font-family: Caveat;
+    text-align: left;
+    font-family: Pacifico;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
     color: #ffffff;
-    font-size: larger;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 0.05em;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 
 header > p:first-child {
     visibility: hidden;
 }
 
+/* navigation */
 nav {
     background: #D9D9D9;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px -1px 4px #7E685A, inset 0px 2px 4px #7E685A;
 }
 
 nav > ul {
@@ -72,17 +71,11 @@ nav > ul {
 
 nav a {
     text-decoration: none;
-    letter-spacing: 0.15rem;
-    font-weight: bolder;
-    font-size: larger;
-    font-family: Caveat;
+    letter-spacing: 0.15em;
 
-    color: #7E685A;
-    -webkit-text-fill-color: #7E685A;    
-    text-shadow: -0.25px 0 black, 0 0.25px black, 0.25px 0 black, 0 -0.25px black;
-}
-
-nav a:hover {
+    font-weight: 400;
+    font-family: Merienda;
+    
     color: transparent;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -90,15 +83,19 @@ nav a:hover {
 
     background-image: url('../assets/menu-text-bg.png');
     background-size: 120%;
-
-    text-shadow: 2px 4px 4px #7E685A;
-    position: relative;
-    top: -0.25rem;
 }
 
+nav a:hover {
+    text-shadow: 0px 8px 4px #7E685A;
+    position: relative;
+    top: -0.5rem;
+    text-decoration: underline;
+}
+
+/* main - banner */
 #banner {
     width: 100%;
-    padding: 2vh 10vw;
+    padding: 4vh 10vw;
 }
 
 #banner > article {
@@ -108,28 +105,34 @@ nav a:hover {
 
 #banner > article:hover {
     border: 0;
-    box-shadow: 2px 8px 10px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 8px 4px rgba(126, 104, 90, 0.75), -4px 8px 4px rgba(126, 104, 90, 0.75);
     cursor: pointer;
     position: relative;
-    top: -0.25rem;
+    top: -0.5rem;
 }
 
 #banner img {
     width: 100%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #banner h1 {
-    font-size: x-large;
-    font-family: Caveat;
+    margin: 0;
+    font-family: Merienda;
     color: #7E685A;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    text-shadow: -0.25px 0 black, 0 0.25px black, 0.25px 0 black, 0 -0.25px black;
+    padding: 1rem;
     letter-spacing: 0.15rem;
     text-align: center;
+    font-size: 5vw;
+    font-weight: 400;
 }
 
+#banner h1 > span {
+    font-size: 2.5vw;
+}
+
+/* main - service cards */
 #service-cards {
     padding: 0rem 1rem;
 }
@@ -143,8 +146,8 @@ nav a:hover {
 #service-cards > article:hover {
     cursor: pointer;
     position: relative;
-    top:-0.25rem;
-    box-shadow: 2px 8px 10px 4px rgba(0, 0, 0, 0.25);
+    top:-0.5rem;
+    box-shadow: -4px 8px 4px rgba(126, 104, 90, 0.75), 4px 8px 4px rgba(126, 104, 90, 0.75);
 }
 
 #service-cards img {
@@ -154,21 +157,29 @@ nav a:hover {
 }
 
 #service-cards h2 {
+    margin: 0;
+    padding: 0.5rem 1rem 0rem 1rem;
     color: #7E685A;
-    font-family: Caveat;
-    font-size: x-large;
-    text-align: center;
-    letter-spacing: 0.1vw;
+    font-family: Merienda;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
 }
 
 #service-cards p {
-    padding: 0rem 1rem 1rem 1rem;
+    margin: 0;
+    font-family: BioRhyme;
+    padding: 1rem 1rem 1rem 1rem;
     color: #7E685A;
     font-size: 1rem;
+    letter-spacing: 0.02em;
 }
 
+/* footer */
 footer {
-    height: 10vh;
+    height: 8vh;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -183,9 +194,9 @@ footer > div {
     align-items: center;
     background-image: url('../assets/menu-text-bg.png');
     background-size: contain;
-    padding: 1vh 2vw;
+    padding: 0vh 2vw;
     justify-content: space-between;
-    animation: footer-bg-anim 20s linear infinite;
+    animation: footer-bg-anim 50s linear infinite;
 }
 
 @keyframes footer-bg-anim {
@@ -202,57 +213,70 @@ footer img {
 }
 
 footer p {
-    font-size: x-large;
+    font-size: 1.25rem;
     color: white;
     margin-left: 1vw;
-    font-family: Caveat;
+    font-family: Merienda;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     letter-spacing: 0.1vw;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     
-    #banner {
-        padding: 2vh 15vw;
+    header {
+        gap: 2vw;
     }
 
-    #banner img {
-        max-width: 25%;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-    
-    #banner > article {
-        display: flex;
-    }
-    
-    #banner h1 {
-        font-size: xx-large;
-        text-align: left;
-        align-self: center;
+    header > p {font-size: 2vw;}
+
+    #banner {
+        padding: 3vh 15vw 3vh 15vw;
     }
 
     #banner a {
         display: flex;
     }
 
-    header {
-        background-size: cover;
-        animation: header-bg-anim 15s linear infinite;
+    #banner img {
+        width: 40%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
     }
     
-    nav a {font-size: xx-large;}
+    #banner h1 {
+        font-size: 2.5vw;
+        text-align: center;
+        align-self: center;
+        padding-left: 2vw;
+    }
+
+    #banner h1 > span {
+        font-size: 1.5vw;
+    }
     
-    header > p {font-size: xx-large;}
+    nav a {
+        font-size: 2rem;
+    }
 
     #service-cards {
         display: flex;
-        padding: 0vh 10vw;
-        gap: 8vw;
+    }
+
+    #service-cards > article {
+        margin: 0rem 4vw;
+        align-items: stretch;
     }
 
     #service-cards h2 {
-        font-size: xx-large;
+        font-size: 1.15vw;
+    }
+
+    #service-cards p {
+        font-size: 1vw;
+    }
+
+    footer {
+        margin: 2vh 0rem 2vh 0rem;
     }
 
     footer > div {
@@ -260,7 +284,7 @@ footer p {
     }
 
     footer p {
-        font-size: xx-large;
+        font-size: 1.5vw;
     }
 
     footer img {
